@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>My Personal Website</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <style>
+         /* CSS for the video container */
+         #video-container {
+            position: relative; /* Set the position to relative */
+            width: 100%; /* Set width to 100% */
+            height: 500px; /* Set the height of the video container */
+            overflow: hidden; /* Hide overflowing content */
+         }
+
+         /* CSS for the video background */
+         #video-background {
+            position: absolute; /* Set the position to absolute */
+            width: 100%; /* Set width to 100% */
+            height: auto; /* Maintain aspect ratio */
+            z-index: -1; /* Set z-index to move behind other content */
+            opacity: 0.8;
+         }
+
+         /* CSS for Our Mission section */
+         .our-mission {
+            position: absolute; /* Set the position to absolute */
+            top: 50%; /* Align the top of the element with the vertical midpoint of its containing block */
+            left: 50%; /* Align the left edge of the element with the vertical midpoint of its containing block */
+            transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+            text-align: center; /* Center text */
+            z-index: 1; /* Ensure the section appears above the video */
+            color: white; /* Set text color to white */
+            width: 75%; /* Adjust width as needed */
+            font-family: 'Mercury', sans-serif;
+            font-size: 40px;
+         }
+
+         /* Style for the dropdown content */
+         .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+         }
+
+         /* Style for the dropdown links */
+         .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+         }
+
+         /* Style for the dropdown links on hover */
+         .dropdown-content a:hover {
+            background-color: #ddd;
+         }
+
+         /* Show the dropdown content on hover */
+         .dropdown:hover .dropdown-content {
+            display: block;
+         }
+
+         /* Ensure equal spacing for navigation links */
+         nav {
+            display: flex;
+            align-items: center;
+         }
+
+         nav a {
+            margin-right: 20px;
+         }
+
+         /* CSS for title and navigation */
+         header {
+            background-color: #333; /* Lighter shade of black */
+            padding: 10px 0; /* Add padding */
+            text-align: left;
+            font-family: 'Mercury', sans-serif;
+            color: white; /* Change text color to white */
+         }
+
+         h1, nav a {
+            font-size: 28px; /* Increase font size for title */
+            color: white; /* Change text color to white */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Ensure the background covers the whole title */
+            padding: 10px 20px; /* Add padding */
+            font-family: 'Mercury', sans-serif; /* Set font family */
+         }
+
+         nav {
+            display: inline-block;
+            margin-left: 40px; /* Increase left margin for navigation */
+         }
+
+         nav a {
+            margin-right: 20px; /* Increase right margin for navigation links */
+            font-size: 18px; /* Adjust font size for navigation links */
+            cursor: pointer; /* Change cursor to pointer */
+         }
+
+         body {
+            background-color: #f0f8ff; /* Faint blue background */
+         }
+
+         .Equity {
+            color: Black;
+            font-size: 30px;
+            font-family: 'Mercury', sans-serif;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 500px;
+
+         }
+        
+        
+
+        
+       
+
+        
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>EquityEdge Research</h1>
+         <nav>
+            <div class="dropdown">
+               <a href="#" class="dropbtn">About</a>
+               <div class="dropdown-content">
+                  <a href="Our Purpose and Value.html">Our Purpose and Values</a>
+                  <a href="Leadership.html">Leadership</a>
+                  <a href="Main page.html">Main</a>
+               </div>
+            </div>
+         </nav>
+         <nav>
+            <div class="dropdown">
+               <a href="#" class="dropbtn">Equity Research Articles</a>
+               <div class="dropdown-content">
+                  <a href="Technology.html">Technology</a>
+                  <a href="US Banks.html">US Banks</a>
+                  <a href="Health Care.html">Health Care</a>
+                  <a href="Global Metals and Mining.html">Global Metals and Mining</a>
+               </div>
+            </div>
+         </nav>
+         <nav>
+            <a href="FinancialModels.html">Financial Models</a>
+            <!-- Add dropdown menu to the "About" link -->
+         </nav>
+      </header>
+      <main>
+         <div id="video-container">
+            <video autoplay loop muted id="video-background">
+               <source src="main page video.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+            </video>
+         </div>
+         <div class="Equity">
+            <P><strong>"Gain Insights, Deeper you Understanding"</strong></P>
+            
+         <!-- Add more articles as needed -->
+      </main>
+      <footer>
+         <!-- Footer content goes here -->
+      </footer>
+   </body>
+</html>
